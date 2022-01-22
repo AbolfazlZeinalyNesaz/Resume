@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>نمایشگر مناسبت ها</title>
+  </head>
+  <body>
+  <p id="demo"></p>
+  <h3>This is Abolfazl Zeinalynesaz calandar</h3>
+  <script>
+  let calandar;
+  switch(new Date().getDay()){
+  
+  case 0:
+	calandar = "Saturday";
+	break;
+  case 1:
+	calandar = "Sunday";
+	break;
+  case 2:
+	calandar = "Monday";
+	break;
+  case 3:
+	calandar = "Tuesday";
+	break;
+  case 4:
+	calandar = "Wednesday";
+	break;
+  case 5:
+	calandar = "Thursday";
+	break;
+  case 6:
+	calandar = "Friday";
+	break;
+  }
+  document.getElementById("demo").innerHTML = "Todays occasion : " + calandar;
+  </script>
+  </body>
+</html>
